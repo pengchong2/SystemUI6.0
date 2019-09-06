@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--导航-->
+    <RadioGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:tag="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:background="@drawable/flyauido_systemui_navigationbar_tablelayout_bg"
+        android:weightSum="5"
+        android:id="@+id/rg0"
+        android:orientation="horizontal">
+
+    <!--   android:tag="flyaudio.com.j6mp3;flyaudio.com.j6mp3.MainActivityVF"-->
+    <!--   android:tag="com.autonavi.amapauto;com.autonavi.auto.MainMapActivity"-->
+        <!--地图-->
+        <RadioButton
+            android:id="@+id/rb1"
+            android:tag="com.autonavi.amapauto;com.autonavi.auto.MainMapActivity"
+            android:text="@string/flyaudio_Map"
+            android:checked="true"
+            style="@style/flyaudio_systemui_child_radiobutton_style" />
+
+        <!--充电桩-->
+        <RadioButton
+            android:id="@+id/rb2"
+            android:tag="broadcast:AUTONAVI_STANDARD_BROADCAST_RECV|KEY_TYPE:10036;KEYWORDS:充电;SOURCE_APP:Third App"
+            android:text="@string/flyaudio_Electric"
+            style="@style/flyaudio_systemui_child_radiobutton_style"/>
+
+        <!--美食-->
+        <RadioButton
+            android:id="@+id/rb3"
+            android:tag="broadcast:AUTONAVI_STANDARD_BROADCAST_RECV|KEY_TYPE:10036;KEYWORDS:美食;SOURCE_APP:Third App"
+            android:text="@string/flyaudio_Cate"
+            style="@style/flyaudio_systemui_child_radiobutton_style" />
+
+        <!--停车场-->
+        <RadioButton
+            android:id="@+id/rb4"
+            android:tag="broadcast:AUTONAVI_STANDARD_BROADCAST_RECV|KEY_TYPE:10036;KEYWORDS:停车场;SOURCE_APP:Third App"
+            android:text="@string/flyaudio_Park"
+            style="@style/flyaudio_systemui_child_radiobutton_style" />
+
+        <!--4S店-->
+        <RadioButton
+            android:id="@+id/rb5"
+            android:tag="broadcast:AUTONAVI_STANDARD_BROADCAST_RECV|KEY_TYPE:10036;KEYWORDS:4s;SOURCE_APP:Third App"
+            android:text="@string/flyaudio_4S"
+            style="@style/flyaudio_systemui_child_radiobutton_style" />
+
+    </RadioGroup>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--音量条-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_seekbar_root"
+    android:layout_width="match_parent"
+    android:layout_height="108px" >
+
+    <ImageView
+        android:id="@+id/ic_systemui_voice"
+        android:layout_marginTop="25px"
+        android:layout_width="56px"
+        android:layout_height="58px"
+        android:layout_marginStart="63px"
+        android:src="@drawable/bottom_seekbar_voice_bg" />
+
+
+    <SeekBar
+        style="@android:style/Widget.SeekBar"
+        android:id="@+id/id_seekBar"
+        android:layout_marginTop="25px"
+        android:layout_width="800px"
+        android:layout_height="58px"
+        android:progressDrawable="@drawable/bottom_seekbar_bg"
+        android:minHeight="58px"
+        android:maxHeight="58px"
+        android:thumb="@drawable/bottom_seekbar_slider"
+        android:thumbOffset="3px"
+        />
+
+
+
+    <TextView
+        android:layout_marginTop="27px"
+        android:id="@+id/tv_sound_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+</LinearLayout>

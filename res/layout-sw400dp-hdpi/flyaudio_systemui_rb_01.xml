@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--天气-->
+    <RadioGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:tag="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flyauido_systemui_navigationbar_tablelayout_temp_bg"
+        android:id="@+id/rg0"
+        android:orientation="horizontal"
+      >
+
+    <!--云音乐-->
+    <RadioButton
+
+        android:id="@+id/rb1"
+        android:tag="cn.kuwo.kwmusiccar;cn.kuwo.kwmusiccar.WelcomeActivity"
+        android:text="@string/flyaudio_CloudMusic"
+        style="@style/flyaudio_systemui_child_radiobutton_style"
+        android:visibility="gone"/>
+
+
+    <!--本地 跳转到天气首页-->
+    <RadioButton
+        android:id="@+id/rb2"
+        android:tag="cn.flyaudio.Weather;cn.flyaudio.weather.activity.WeatherDetailsActivity"
+        android:text="@string/flyaudio_Local"
+        android:checked="true"
+        style="@style/flyaudio_systemui_child_radiobutton_style"
+        android:visibility="gone"/>
+
+    <!--云直播-->
+    <RadioButton
+        android:id="@+id/rb3"
+        android:tag="com.huajiao.sdk.demo;com.huajiao.sdk.MainActivity"
+        android:text="@string/flyaudio_CloudLive"
+        style="@style/flyaudio_systemui_child_radiobutton_style"
+        android:visibility="gone"/>
+
+    <!--云视频-->
+    <RadioButton
+        android:id="@+id/rb4"
+        android:tag="com.youku.cloud.demo;com.youku.cloud.demo.ListViewTest"
+        android:text="@string/flyaudio_CloudVideo"
+        style="@style/flyaudio_systemui_child_radiobutton_style"
+        android:visibility="gone"/>
+
+    <!--网络电台-->
+    <RadioButton
+        android:id="@+id/rb5"
+        android:tag="com.flyaudio.flyradioonline;com.flyaudio.flyradioonline.task.main.MainActivity"
+        android:text="@string/flyaudio_NetworkRadio"
+        style="@style/flyaudio_systemui_child_radiobutton_style"
+        android:visibility="gone"/>
+
+    </RadioGroup>
+

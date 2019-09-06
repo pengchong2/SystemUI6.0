@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--change color according to system-->
+    <!--<string name="isSystemUIColorSkin">noSystemUIColorSkin</string>-->
+    <!--是否变颜色-->
+    <string name="isColorSkin">isColorSkin</string>
+    <!--是否显示原生的锁屏页-->
+    <bool name="no_show_lockscreen">true</bool>
+    <!--SystemUI show WaringDialog driving-->
+    <bool name="isShowWaringDialog">true</bool>
+    <!--最近列表显示清除按钮-->
+    <bool name="isShowRecentCleanButton">true</bool>
+    <!--最近列表是否屏蔽白名单-->
+    <bool name="hide_flyaudio_app_list_from_recent">true</bool>
+    <!--最近列表清除按钮字体颜色-->
+    <color name="recent_clean_button_text_color">#FFFFFF</color>
+    <!--最近列表清除按钮字体大小-->
+    <integer name="recent_clean_button_text_size">12</integer>
+    <!--最近列表清除按钮button背景颜色：clear_recent_apps_btn.xml-->
+    <!--最近列表button的高-->
+    <integer name="recent_clean_button_height">58</integer>
+    <!--最近列表清除按钮button的topMargin-->
+    <integer name="recent_clean_button_topMargin">10</integer>
+    <!--最近列表 view top padding -->
+    <dimen name="recents_stack_top_padding">52dp</dimen>
+
+    <!--底部导航按钮显示音量控制-->
+    <bool name="isshow_music_control">true</bool>
+    <!--底部导航按钮显示导航和音效-->
+    <bool name="isshow_gpsandsound">false</bool>
+    <!---->
+    <!--开关/通知 字体默认大小-->
+    <string name="status_bar_default_textsize">20</string>
+    <!--开关/通知 选中字体大小-->
+    <string name="status_bar__selected_textsize">24</string>
+    <!--开关通知距离左边的margin-->
+    <dimen name="status_bar_switch_notification_marginStart">16dp</dimen>
+    <!--"/"的字体大小 -->
+    <dimen name="status_bar_default_textsize">22sp</dimen>
+    <!--是否显示开关/通知 的斜杠-->
+    <string name="isShowOrView">true</string>
+    <!--"/"的寬度 0 默认自适应-->
+    <integer name="or_view_width">0</integer>
+    <!--分割线的高度-->
+    <dimen name="status_bar_header_line_height">1px</dimen>
+    <!--是否自定义快捷开关的图标顺序 -->
+    <!--开关顺序 默认 值不可设置任何值-->
+    <string name="quick_switch_buttons_list"></string>
+    <!--底部导航 按钮的字体颜色-->
+    <color name="systemui_buttom_textcolor_d">@android:color/white</color>
+    <color name="systemui_buttom_textcolor_u">@android:color/white</color>
+
+    <!--开关页背景颜色（透光颜色）-->
+    <color name="m_qs_container_bg_color">#FF0000</color>
+
+    <!--开关/通知 指示器颜色-->
+    <color name="m_line_view_pointer_color">#FF0000</color>
+
+    <!--通知分割线的颜色-->
+    <color name="flyaudio_speedbump_line">#6fdddddd</color>
+
+    <string name="lsrale_flysystem_app_whitelist">/flysystem/flytheme/config/wl.tmp</string>
+    <string name="lsrale_thirdparty_app_whitelist">/flyapdata/install/wl.tmp</string>
+
+    <!--flyaudio color-->
+    <!-- The "inside" of a notification, reached via longpress -->
+    <!--长按通知item的颜色-->
+    <color name="notification_guts_bg_color">#ff384248</color>
+    <color name="notification_guts_title_color">#FFFFFFFF</color>
+    <color name="notification_guts_text_color">#b2FFFFFF</color>
+
+    <!-- The color of the legacy notification background -->
+    <color name="notification_legacy_background_color">#ff1a1a1a</color>
+
+    <!-- The color of the material notification background -->
+    <color name="notification_material_background_color">@color/status_bar_color</color>
+
+    <!-- The color of the material notification background when dimmed -->
+    <color name="notification_material_background_dimmed_color">@color/status_bar_color</color>
+
+    <!-- The color of the material notification background when low priority -->
+    <color name="notification_material_background_low_priority_color">@color/status_bar_color</color>
+
+    <!-- The color of the material notification background for media notifications when no custom
+         color is specified -->
+    <color name="notification_material_background_media_default_color">#ff424242</color>
+
+    <!-- The color of the ripples on the untinted notifications -->
+    <color name="notification_ripple_untinted_color">#28000000</color>
+
+    <!-- The color of the ripples on the low priority notifications -->
+    <color name="notification_ripple_color_low_priority">#30000000</color>
+
+    <!-- The color of the ripples on the tinted notifications -->
+    <color name="notification_ripple_tinted_color">#30ffffff</color>
+
+    <!--快捷开关按下字体颜色-->
+    <color name="power_button_text_color">#ff0000</color>
+    <!--快捷开关默认字体颜色-->
+    <color name="power_button_text_color_d">#ffffff</color>
+    <!--header的颜色 通知栏item背景颜色-->
+    <color name="status_bar_color">#eff1f4</color>
+    <!--reset.xml videoWaring-->
+    <color name="reset_title">#FFFFFFFF</color>
+    <!--头部背景颜色-->
+    <color name="status_bar_header_view_background_color">#121519</color>
+    <!--通知栏的背景颜色-->
+    <color name="Systemui_notification__view_background_color">#121519</color>
+    <!--end-->
+
+    <!--头部位置 开关/通知 选中和默认的颜色-->
+    <color name="color_text_selected_textview">#ffffff</color>
+    <color name="color_text_normal_textview">#535353</color>
+    <!--"/"-->
+    <color name="color_choose_state_textview_or">#FFFFFF</color>
+    <!--分割线的颜色-->
+    <color name="color_background_header_line">#FF0000</color>
+
+
+    <color name="date_view_text_color">#FFFFFF</color>
+
+    <color name="time_view_text_color">#FFFFFF</color>
+
+    <color name="am_pm_view_text_color">#FFFFFF</color>
+
+    <color name="no_notifications_text_color">#FFFFFF</color>
+
+    <color name="one_dismiss_view_color">#44969e</color>
+
+    <color name="two_dismiss_view_color">#44969e</color>
+
+    <color name="three_dismiss_view_color">#44969e</color>
+
+</resources>

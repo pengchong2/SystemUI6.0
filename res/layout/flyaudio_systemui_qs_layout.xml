@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="904px"
+        android:layout_height="46px"
+        android:orientation="horizontal"
+        android:gravity="right|center">
+
+        <TextView
+            android:id="@+id/flyaudio_qs_date_week_time_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18px"
+            android:textColor="@android:color/white"
+            android:text="@string/date_week_time_default_text"
+            android:layout_marginRight="10px"
+            android:gravity="center"
+         />
+    </LinearLayout>
+
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:background="@drawable/flyaudio_systemui_qs_container_bg">
+
+    <LinearLayout
+        android:id="@+id/fs_pow_011"
+        android:layout_width="match_parent"
+        android:layout_height="162px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:paddingStart="25px"
+        android:paddingTop="26px">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="60px"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/mutebtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flyaudio_systemui_mute_btn_selector"/>
+            <TextView
+                android:id="@+id/mutetv1"
+                android:textSize="20px"
+                android:text="@string/flyaudio_mute_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16px"
+                android:textColor="@drawable/flyaudio_systemui_button_textcolor"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="60px"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/closescreenbtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flyaudio_systemui_closescreen_btn_selector"/>
+
+            <TextView
+                android:id="@+id/closescreentv1"
+                android:textSize="20px"
+                android:text="@string/flyaudio_closescreen_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16px"
+                android:textColor="@drawable/flyaudio_systemui_button_textcolor" />
+
+        </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_marginRight="60px"
+             android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/wifibtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flyaudio_systemui_wifi_btn_selector"/>
+
+             <TextView
+                 android:id="@+id/wifitv1"
+                 android:textSize="20px"
+                 android:text="@string/flyaudio_wifi_tv"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="16px"
+                 android:textColor="@drawable/flyaudio_systemui_button_textcolor"/>
+
+         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="60px"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/databtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flyaudio_systemui_data_btn_selector"/>
+            <TextView
+                android:id="@+id/datatv1"
+                android:textSize="20px"
+                android:text="@string/flyaudio_data_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16px"
+                android:textColor="@drawable/flyaudio_systemui_button_textcolor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="60px"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/airplanbtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flyaudio_systemui_airplane_btn_selector"/>
+            <TextView
+                android:id="@+id/airplanetv1"
+                android:textSize="20px"
+                android:text="@string/flyaudio_airplane_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16px"
+                android:textColor="@drawable/flyaudio_systemui_button_textcolor"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="60px"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/bluetoothbtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flyaudio_systemui_bluetooth_btn_selector"/>
+        <TextView
+            android:id="@+id/bluetoothtv1"
+            android:textSize="20px"
+            android:text="@string/flyaudio_bluetooth_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16px"
+            android:textColor="@drawable/flyaudio_systemui_button_textcolor" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/audiobtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flyaudio_systemui_audio_btn_selector"/>
+
+            <TextView
+                android:id="@+id/audiotv1"
+                android:textSize="20px"
+                android:text="@string/flyaudio_audio_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16px"
+                android:textColor="@drawable/flyaudio_systemui_button_textcolor" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fs_pow_021"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:orientation="horizontal"
+        android:layout_marginTop="2px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/qs_seekbar_volume_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20px"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="44px"
+            android:gravity="center"
+            android:text="@string/qs_seekbar_volume_text" />
+
+
+        <ImageButton
+            android:id="@+id/qs_seekbar_volume_dec1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flyaudio_systemui_volume_dec_btn_selector" />
+
+        <SeekBar
+            android:id="@+id/id_seekBar_volume1"
+            style="@android:style/Widget.SeekBar"
+            android:layout_width="635px"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/qs_seekbar_volume"
+            android:thumb="@drawable/flyaudio_systemui_bottom_seekbar_slider_bg" />
+
+        <ImageButton
+            android:id="@+id/qs_seekbar_volume_inc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flyaudio_systemui_volume_inc_btn_selector" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fs_pow_031"
+        android:layout_width="match_parent"
+        android:layout_height="152px"
+        android:orientation="vertical"
+        android:layout_marginTop="2px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="6px">
+
+            <TextView
+                android:id="@+id/qs_seekbar_brightness_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20px"
+                android:layout_marginLeft="44px"
+                android:textColor="@android:color/white"
+                android:text="@string/qs_seekbar_brightness_text" />
+
+            <ImageButton
+                android:id="@+id/qs_seekbar_brightness_dec1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flyaudio_systemui_light_dec_btn_selector" />
+
+            <SeekBar
+                android:id="@+id/id_seekBar_brightness1"
+                style="@android:style/Widget.SeekBar"
+                android:layout_width="635px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:progressDrawable="@drawable/qs_seekbar_brightness"
+                android:thumb="@drawable/flyaudio_systemui_bottom_seekbar_slider_bg" />
+
+            <ImageButton
+                android:id="@+id/qs_seekbar_brightness_inc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flyaudio_systemui_light_inc_btn_selector" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/qs_auto_brightness_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textSize="20px"
+                android:layout_marginLeft="29px"
+                android:textColor="@android:color/white"
+                android:text="@string/qs_auto_brightness_text"/>
+
+            <Switch
+                android:id="@+id/qs_auto_brightness1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20px"
+                android:background="@drawable/qs_auto_switch_selector"
+                android:thumb="@null"
+                android:track="@null" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+  </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fs_pow_041"
+        android:layout_width="match_parent"
+        android:layout_height="46px"
+        android:background="@drawable/flyaudio_systemui_bottom_button_line_bg"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</LinearLayout>

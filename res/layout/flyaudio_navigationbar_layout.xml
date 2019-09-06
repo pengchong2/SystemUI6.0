@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/botttom_bg">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navilayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="31px"
+    android:layout_marginBottom="10px">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.flyaudio.view.MyRadioButton
+            android:id="@+id/tempbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/flyaudio_systemui_navigationbar_temp_btn"
+            android:textSize="22px"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:paddingBottom="15px"
+            android:layout_marginBottom="6px"
+            />
+        <RadioButton
+            android:id="@+id/navigationbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/flyaudio_systemui_navigationbar_navi_btn"
+            android:layout_marginBottom="6px"/>
+        <RadioButton
+            android:id="@+id/mediabtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/flyaudio_systemui_navigationbar_media_btn"
+            android:layout_marginBottom="6px"/>
+        <RadioButton
+            android:id="@+id/carinforbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:button="@drawable/flyaudio_systemui_navigationbar_carinfo_btn"
+            android:layout_marginBottom="6px"/>
+        <RadioButton
+            android:id="@+id/mebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/flyaudio_systemui_navigationbar_me_btn"
+            android:layout_marginBottom="5px"/>
+        <RadioButton
+            android:id="@+id/voicebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/flyaudio_systemui_navigationbar_voice_btn" />
+    </RadioGroup>
+</LinearLayout>
+</LinearLayout>

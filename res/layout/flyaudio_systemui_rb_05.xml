@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--我的-->
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:tag="5"
+    android:id="@+id/rg0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/flyauido_systemui_navigationbar_tablelayout_bg"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+    <!--保养-->
+ <RadioButton
+     android:id="@+id/rb1"
+    android:tag="cn.flyaudio.vehiclemaintenance;cn.flyaudio.vehiclemaintenance.activity.NetWorkVersionActivity"
+    android:text="@string/flyaudio_Maintain"
+    android:checked="true"
+    style="@style/flyaudio_systemui_child_radiobutton_style"/>
+
+    <!--救援-->
+    <RadioButton
+        android:id="@+id/rb2"
+        android:tag="com.flyaudio.flymine;com.flyaudio.flymine.activity.RescueActivity"
+        android:text="@string/flyaudio_Rescue"
+        style="@style/flyaudio_systemui_child_radiobutton_style" />
+
+    <!--用户反馈-->
+    <RadioButton
+        android:id="@+id/rb3"
+        android:tag="cn.flyaudio.flyremotediagnose;cn.flyaudio.flyremotediagnose.ui.GuideActivity"
+        android:text="@string/flyaudio_UserFeedback"
+        style="@style/flyaudio_systemui_child_radiobutton_style"/>
+
+    <!--个人中心-->
+    <RadioButton
+        android:id="@+id/rb4"
+        android:tag="cn.flyaudio.accountmanager;cn.flyaudio.accountmanager.ui.AccountActivity"
+        android:text="@string/flyaudio_PersonalCenter"
+        style="@style/flyaudio_systemui_child_radiobutton_style" />
+
+    <!--第三方应用-->
+    <RadioButton
+        android:id="@+id/rb5"
+        android:tag="cn.flyaudio.moreapplication;cn.flyaudio.moreapplication.ui.MainActivity"
+        android:text="@string/flyaudio_AllApp"
+        style="@style/flyaudio_systemui_child_radiobutton_style" />
+
+</RadioGroup>
+

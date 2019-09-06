@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--车辆-->
+    <RadioGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:tag="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flyauido_systemui_navigationbar_tablelayout_bg"
+        android:weightSum="4"
+        android:id="@+id/rg0"
+        android:orientation="horizontal"
+       >
+
+        <!--车控-->
+        <RadioButton
+            android:id="@+id/rb1"
+            android:tag="cn.flyaudio.launcher.carinfor;cn.flyaudio.launcher.carinfor.CarInforActivity"
+            android:text="@string/flyaudio_CarInfor"
+            android:checked="true"
+            style="@style/flyaudio_systemui_child_radiobutton_style" />
+
+        <!--空调-->
+    <!--
+        <RadioButton
+            android:id="@+id/rb2"
+            android:visibility="gone"
+            android:tag="com.flyaudio.flyguardian;com.android.launcher.Air"
+            android:text="@string/flyaudio_AirConditioner"
+            style="@style/flyaudio_systemui_child_radiobutton_style" />
+-->
+        <!--电话-->
+        <RadioButton
+            android:id="@+id/rb3"
+            android:tag="com.flyaudio.flyguardian;com.android.launcher.Bluetooth"
+            android:text="@string/flyaudio_Phone"
+            style="@style/flyaudio_systemui_child_radiobutton_style" />
+
+        <!--车机设置-->
+        <RadioButton
+            android:id="@+id/rb4"
+            android:tag="com.flyaudio.flyguardian;com.android.launcher.Setup"
+            android:text="@string/flyaudio_CarSettings"
+            style="@style/flyaudio_systemui_child_radiobutton_style"/>
+
+        <!--智能附件-->
+        <RadioButton
+            android:id="@+id/rb5"
+            android:tag="com.flyaudio.intelligentaccessory;com.flyaudio.intelligentaccessory.AccessoryActivity"
+            android:text="@string/flyaudio_Smart"
+            style="@style/flyaudio_systemui_child_radiobutton_style"/>
+
+    </RadioGroup>
+

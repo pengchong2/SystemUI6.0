@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/res/layout/keyguard.xml
+**
+** Copyright 2007, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/fl_video_waring_bg"
+   android:layout_width="660px"
+   android:layout_height="340px"
+  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/reset_title"
+            android:layout_width="550px"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70px"
+            android:text="@string/waring"
+            android:textColor="@color/reset_title"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/video_okLabel"
+            android:layout_width="164px"
+            android:layout_height="68px"
+            android:layout_marginTop="50px"
+            android:text="@string/okLabel"
+            android:textColor="@color/button_color"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+</FrameLayout>
+
+
+

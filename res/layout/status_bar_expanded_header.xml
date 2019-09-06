@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+** Copyright 2012, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+-->
+
+<!-- Extends RelativeLayout -->
+<com.android.systemui.statusbar.phone.StatusBarHeaderView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:systemui="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/status_bar_header_height"
+    android:layout_gravity="@integer/notification_panel_layout_gravity"
+    android:baselineAligned="false"
+    android:elevation="6dp"
+    android:background="@color/status_bar_header_view_background_color"
+    android:clickable="true"
+    android:focusable="true"
+    >
+    <!--屏蔽该控件（多用户）-->
+    <com.android.systemui.statusbar.phone.MultiUserSwitch android:id="@+id/multi_user_switch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true">
+        <ImageView android:id="@+id/multi_user_avatar"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"/>
+    </com.android.systemui.statusbar.phone.MultiUserSwitch>
+
+    <!--屏蔽该控件 （设置）-->
+    <com.android.systemui.statusbar.AlphaOptimizedFrameLayout
+        android:id="@+id/settings_button_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_toStartOf="@id/multi_user_switch">
+
+        <com.android.systemui.statusbar.phone.SettingsButton android:id="@+id/settings_button"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/ripple_drawable"
+            android:src="@drawable/ic_settings"
+            android:contentDescription="@string/accessibility_desc_settings" />
+        <com.android.systemui.statusbar.AlphaOptimizedImageView android:id="@+id/tuner_icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingStart="36dp"
+            android:tint="#4DFFFFFF"
+            android:tintMode="src_in"
+            android:visibility="invisible"
+            android:src="@drawable/tuner" />
+
+    </com.android.systemui.statusbar.AlphaOptimizedFrameLayout>
+
+
+    <LinearLayout android:id="@+id/system_icons_super_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_toStartOf="@id/multi_user_switch"
+        android:layout_alignWithParentIfMissing="true">
+        <FrameLayout android:id="@+id/system_icons_container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            >
+            <include layout="@layout/system_icons" />
+        </FrameLayout>
+<!--
+        <TextView android:id="@+id/battery_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/header_battery_margin_expanded"
+            android:paddingEnd="@dimen/battery_level_padding_end"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/battery_level_text_size"
+            android:importantForAccessibility="noHideDescendants"/>
+             -->
+    </LinearLayout>
+
+    <!--添加时间日期控件-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/status_bar_header_height"
+        android:layout_toStartOf="@id/multi_user_switch"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:paddingEnd="4dp">
+
+        <FrameLayout
+            android:id="@+id/fly_date"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <com.android.systemui.statusbar.policy.DateView
+                android:id="@+id/date_collapsed"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:singleLine="true"
+                android:textColor="@color/date_view_text_color"
+                android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Date"
+                android:layout_below="@id/clock"
+                systemui:datePattern="@string/abbrev_wday_month_day_no_year_alarm"
+                />
+
+            <com.android.systemui.statusbar.policy.DateView android:id="@+id/date_expanded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:singleLine="true"
+                android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Date"
+                android:textColor="@color/date_view_text_color"
+                android:layout_below="@id/clock"
+                systemui:datePattern="eeeeMMMMd"
+                />
+        </FrameLayout>
+
+        <include layout="@layout/split_clock_view" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/header_emergency_calls_only"
+        android:layout_height="@dimen/status_bar_header_height"
+        android:layout_width="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/system_icons_super_container"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.StatusBar.Expanded.EmergencyCallsOnly"
+        android:text="@*android:string/emergency_calls_only"
+        android:singleLine="true"
+        android:gravity="center_vertical" />
+
+    <FrameLayout
+        android:id="@+id/date_group"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        android:layout_marginBottom="@dimen/clock_collapsed_bottom_margin"
+        android:layout_alignParentBottom="true">
+    </FrameLayout>
+
+    <!--添加Flyaudio 头部 开关/通知控件-->
+    <FrameLayout
+        android:id="@+id/head_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/rg_status_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <com.flyaudio.view.ChooseStateTextView
+                    android:id="@+id/status_tag"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/fly_switch" />
+
+                <com.flyaudio.view.ChooseStateTextView
+                    android:id="@+id/or"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/line_tag"
+                    android:textColor="@color/color_choose_state_textview_or"
+                    android:textSize="@dimen/status_bar_default_textsize" />
+
+                <com.flyaudio.view.ChooseStateTextView
+                    android:gravity="center"
+                    android:id="@+id/notification_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/fly_notifications" />
+
+        </LinearLayout>
+
+        <com.flyaudio.view.lineView
+            android:id="@+id/line_tag"
+            android:layout_width="15px"
+            android:layout_height="15px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1px" />
+    </FrameLayout>
+
+    <!--Flyaudio 头部分割线-->
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_bar_header_line_height"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+    <com.android.systemui.statusbar.AlphaOptimizedButton android:id="@+id/alarm_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/date_group"
+        android:layout_marginBottom="4dp"
+        android:drawablePadding="6dp"
+        android:drawableStart="@drawable/ic_access_alarms_small"
+        android:textColor="#64ffffff"
+        android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Date"
+        android:paddingEnd="6dp"
+        android:paddingStart="6dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:visibility="gone"
+        />
+
+    <!--屏蔽快捷开关详情也没-->
+    <include
+        android:id="@+id/qs_detail_header"
+        layout="@layout/qs_detail_header"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        />
+
+    <!--屏蔽 switch开关-->
+    <com.android.systemui.statusbar.AlphaOptimizedImageView
+        android:id="@+id/qs_detail_header_progress"
+        android:src="@drawable/indeterminate_anim"
+        android:alpha="0"
+        android:background="@color/qs_detail_progress_track"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        systemui:hasOverlappingRendering="false"
+        />
+
+    <!--屏蔽debugView-->
+    <TextView
+        android:id="@+id/header_debug_info"
+        android:visibility="invisible"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        android:textColor="#00A040"
+        android:padding="2dp"
+        />
+
+</com.android.systemui.statusbar.phone.StatusBarHeaderView>

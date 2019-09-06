@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--返回 菜单 主页 导航 音效-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottom_button_layout"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal" >
+
+    <!-- 返回 -->
+    <FrameLayout
+        android:id="@+id/rback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/buttom_button_bark_marginStart"
+        android:layout_marginStart="@dimen/buttom_button_bark_marginStart"
+        android:layout_marginTop="@dimen/buttom_button_marginTop" >
+
+        <ImageView
+            android:id="@+id/rely_back"
+            android:layout_width="@dimen/buttom_button_icon_width"
+            android:layout_height="@dimen/buttom_button_icon_height" />
+
+        <TextView
+            android:id="@+id/tv_rely_back"
+            android:layout_width="@dimen/buttom_button_text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/buttom_button_text_marginTop"
+            android:gravity="center_horizontal"
+            android:text="@string/rely_back"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/buttom_button_text_size" />
+    </FrameLayout>
+
+    <!-- 菜单 -->
+
+    <FrameLayout
+        android:id="@+id/rmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/buttom_button_icon_marginStart"
+        android:layout_marginStart="@dimen/buttom_button_icon_marginStart"
+        android:layout_marginTop="@dimen/buttom_button_marginTop" >
+
+        <ImageView
+            android:id="@+id/rely_menu"
+            android:layout_width="@dimen/buttom_button_icon_width"
+            android:layout_height="@dimen/buttom_button_icon_height"  />
+
+        <TextView
+            android:id="@+id/tv_rely_menu"
+            android:layout_width="@dimen/buttom_button_text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/buttom_button_text_marginTop"
+            android:gravity="center_horizontal"
+            android:text="@string/rely_menu"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/buttom_button_text_size" />
+    </FrameLayout>
+    <!-- 主页 -->
+
+    <FrameLayout
+        android:id="@+id/rhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/buttom_button_icon_marginStart"
+        android:layout_marginStart="@dimen/buttom_button_icon_marginStart"
+        android:layout_marginTop="@dimen/buttom_button_marginTop" >
+
+        <ImageView
+            android:id="@+id/rely_home"
+            android:layout_width="@dimen/buttom_button_icon_width"
+            android:layout_height="@dimen/buttom_button_icon_height"  />
+
+        <TextView
+            android:id="@+id/tv_rely_home"
+            android:layout_width="@dimen/buttom_button_text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/buttom_button_text_marginTop"
+            android:gravity="center_horizontal"
+            android:text="@string/rely_home"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/buttom_button_text_size" />
+    </FrameLayout>
+
+    <!-- 上一曲 -->
+
+    <FrameLayout
+        android:id="@+id/pre_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/buttom_button_icon_marginStart"
+        android:layout_marginStart="@dimen/buttom_button_icon_marginStart"
+        android:layout_marginTop="@dimen/buttom_button_marginTop" >
+
+        <ImageView
+            android:id="@+id/rely_music_up"
+            android:layout_width="@dimen/buttom_button_icon_width"
+            android:layout_height="@dimen/buttom_button_icon_height"  />
+
+        <TextView
+            android:id="@+id/tv_rely_music_up"
+            android:layout_width="@dimen/buttom_button_text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/buttom_button_text_marginTop"
+            android:gravity="center_horizontal"
+            android:text="@string/rely_music_up"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/buttom_button_text_size" />
+    </FrameLayout>
+    <!-- 下一曲 -->
+
+    <FrameLayout
+        android:id="@+id/next_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/buttom_button_icon_marginStart"
+        android:layout_marginStart="@dimen/buttom_button_icon_marginStart"
+        android:layout_marginTop="@dimen/buttom_button_marginTop" >
+
+        <ImageView
+            android:id="@+id/rely_music_next"
+            android:layout_width="@dimen/buttom_button_icon_width"
+            android:layout_height="@dimen/buttom_button_icon_height"  />
+
+        <TextView
+            android:id="@+id/tv_rely_music_next"
+            android:layout_width="@dimen/buttom_button_text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/buttom_button_text_marginTop"
+            android:gravity="center_horizontal"
+            android:text="@string/rely_music_next"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/buttom_button_text_size" />
+    </FrameLayout>
+
+</LinearLayout>
