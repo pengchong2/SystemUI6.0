@@ -23,3 +23,7 @@ cd frameworks/base/packages/SystemUI
 mm
 
 # 5.类说明
+
+SystemUIApplication.java 继承Application,应用初始化
+
+FlyaudioSystemUI.java 监听页面的第三方应用跳转的点击事件，跳转到指定的应用
