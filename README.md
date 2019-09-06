@@ -34,6 +34,12 @@ PowerButton.java 所有快捷按钮wifi,蓝牙等的基础类
 
 PowerWidget.java 下拉菜单快捷按钮自定义布局类，继承FrameLayout
 
+PhoneStatusBar.java statusbar类，加载底部导航栏和状态栏
+
+# 6.项目进度
+
+完成
+
 
 
 
