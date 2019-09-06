@@ -27,3 +27,13 @@ mm
 SystemUIApplication.java 继承Application,应用初始化
 
 FlyaudioSystemUI.java 监听页面的第三方应用跳转的点击事件，跳转到指定的应用
+
+IProxyConnet.aidl 定义调用系统的接口
+
+PowerButton.java 所有快捷按钮wifi,蓝牙等的基础类
+
+PowerWidget.java 下拉菜单快捷按钮自定义布局类，继承FrameLayout
+
+
+
+
